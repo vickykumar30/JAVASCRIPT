@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP UP BOX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <div id="modelBox">
+        <img src="img/12.jpg" width="100%">
+        <div class="offer-text">
+            <h2>Get 15% OFF</h2>
+            <small>on all beauty products</small>
+            <p>Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit.
+                Facilis officia in id cumque eligendi culpa similique
+            </p>
+            <form>
+                <input type="email" placeholder="Email Address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <img src="img/p1.png" class="close-icon" onclick="closeModel()">
+    </div>
+
+    <script>
+        let modelBox = document.getElementById("modelBox");
+        document.onmouseleave = function () {
+            modelBox.style.display = "block";
+        }
+        function closeModel() {
+            modelBox.style.display = "none";
+        }
+
+    </script>
+</body>
+
+</html>
